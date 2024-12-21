@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Unix Command List</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 20px 0;
+            font-size: 16px;
+            background: rgba(0, 0, 0, 0.7);
+            color: #fff;
+            border-radius: 10px;
+            overflow: hidden;
+        }
+        table thead {
+            background-color: #f1c40f;
+            color: #000;
+        }
+        table th, table td {
+            text-align: left;
+            padding: 12px;
+            border: 1px solid #ddd;
+        }
+        table tbody tr:nth-child(even) {
+            background-color: rgba(255, 255, 255, 0.1);
+        }
+        table tbody tr:hover {
+            background-color: rgba(241, 196, 15, 0.2);
+        }
+        section {
+            padding: 20px;
+            border-radius: 10px;
+            background: rgba(0, 0, 0, 0.6);
+            margin: 20px auto;
+            max-width: 1000px;
+            box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.5);
+        }
+        h2 {
+            color: #f1c40f;
+            margin-bottom: 10px;
+        }
+        nav ul {
+            display: flex;
+            justify-content: space-between;
+            list-style-type: none;
+            padding: 0;
+            margin: 10px 0 20px 0;
+        }
+        nav ul li a {
+            text-decoration: none;
+            color: #f1c40f;
+            font-weight: bold;
+            border: 1px solid #f1c40f;
+            padding: 10px 20px;
+            border-radius: 5px;
+            background: rgba(0, 0, 0, 0.5);
+            transition: background 0.3s, color 0.3s;
+        }
+        nav ul li a:hover {
+            background: #f1c40f;
+            color: #000;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Unix Command List</h1>
+    </header>
+
+    <main>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="javascript:history.back()">Back</a></li>
+            </ul>
+        </nav>
+
+        <section id="commands">
+            <h2>Commands</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Command</th>
+                        <th>Description</th>
+                        <th>Example</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr><td>ls</td><td>List directory contents</td><td><code>ls -la</code></td></tr>
+                    <tr><td>pwd</td><td>Print working directory</td><td><code>pwd</code></td></tr>
+                    <tr><td>cd</td><td>Change directory</td><td><code>cd /home</code></td></tr>
+                    <tr><td>mkdir</td><td>Create a new directory</td><td><code>mkdir new_folder</code></td></tr>
+                    <tr><td>rm</td><td>Remove files or directories</td><td><code>rm -r folder_name</code></td></tr>
+                    <tr><td>cp</td><td>Copy files</td><td><code>cp file1.txt file2.txt</code></td></tr>
+                    <tr><td>mv</td><td>Move or rename files</td><td><code>mv old.txt new.txt</code></td></tr>
+                    <tr><td>touch</td><td>Create an empty file</td><td><code>touch newfile.txt</code></td></tr>
+                    <tr><td>cat</td><td>View file contents</td><td><code>cat file.txt</code></td></tr>
+                    <tr><td>echo</td><td>Print text to the terminal</td><td><code>echo "Hello, World!"</code></td></tr>
+                    <tr><td>find</td><td>Search for files</td><td><code>find /home -name file.txt</code></td></tr>
+                    <tr><td>grep</td><td>Search text in files</td><td><code>grep "text" file.txt</code></td></tr>
+                    <tr><td>chmod</td><td>Change file permissions</td><td><code>chmod 755 script.sh</code></td></tr>
+                    <tr><td>chown</td><td>Change file ownership</td><td><code>chown user file.txt</code></td></tr>
+                    <tr><td>ps</td><td>Display running processes</td><td><code>ps aux</code></td></tr>
+                    <tr><td>kill</td><td>Terminate a process</td><td><code>kill 12345</code></td></tr>
+                    <tr><td>df</td><td>Show disk space usage</td><td><code>df -h</code></td></tr>
+                    <tr><td>du</td><td>Show directory size</td><td><code>du -sh folder_name</code></td></tr>
+                    <tr><td>tar</td><td>Archive files</td><td><code>tar -czvf archive.tar.gz folder_name</code></td></tr>
+                    <tr><td>gzip</td><td>Compress files</td><td><code>gzip file.txt</code></td></tr>
+                    <tr><td>ssh</td><td>Connect to a remote server</td><td><code>ssh user@host</code></td></tr>
+                    <tr><td>scp</td><td>Secure file copy</td><td><code>scp file.txt user@host:/path</code></td></tr>
+                    <tr><td>wget</td><td>Download files</td><td><code>wget http://example.com</code></td></tr>
+                    <tr><td>curl</td><td>Transfer data from/to a server</td><td><code>curl http://example.com</code></td></tr>
+                    <tr><td>top</td><td>Monitor system processes</td><td><code>top</code></td></tr>
+                    <tr><td>uptime</td><td>Show system uptime</td><td><code>uptime</code></td></tr>
+                    <tr><td>whoami</td><td>Show current user</td><td><code>whoami</code></td></tr>
+                    <tr><td>history</td><td>Show command history</td><td><code>history</code></td></tr>
+                    <tr><td>man</td><td>Display command manual</td><td><code>man ls</code></td></tr>
+                </tbody>
+            </table>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Unix Learning Website</p>
+    </footer>
+</body>
+</html>
